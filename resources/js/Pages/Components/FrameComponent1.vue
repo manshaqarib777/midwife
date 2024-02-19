@@ -13,11 +13,61 @@
       <div
         class="w-[1280px] overflow-x-auto flex flex-col items-start justify-start gap-[24px] max-w-full text-lg"
       >
-        <Frame2 /><Frame2 /><Frame2 />
+        <!-- <Frame2 /> -->
+        <div class="w-[1280px] flex flex-row items-start justify-start gap-[16px] text-center text-lg text-midnightblue-100 font-poppins">
+            <Frame2 class="flex-1">
+            <template #header>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </template>
+            <!-- Panel Content -->
+            Your content here...
+            </Frame2>
+            <Frame2 class="flex-1">
+            <template #header>
+                Another panel header
+            </template>
+            <!-- Panel Content -->
+            More content here...
+            </Frame2>
+        </div>
+        <div class="w-[1280px] flex flex-row items-start justify-start gap-[16px] text-center text-lg text-midnightblue-100 font-poppins">
+            <Frame2 class="flex-1">
+            <template #header>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </template>
+            <!-- Panel Content -->
+            Your content here...
+            </Frame2>
+            <Frame2 class="flex-1">
+            <template #header>
+                Another panel header
+            </template>
+            <!-- Panel Content -->
+            More content here...
+            </Frame2>
+        </div>
+        <div class="w-[1280px] flex flex-row items-start justify-start gap-[16px] text-center text-lg text-midnightblue-100 font-poppins">
+            <Frame2 class="flex-1">
+            <template #header>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </template>
+            <!-- Panel Content -->
+            Your content here...
+            </Frame2>
+            <Frame2 class="flex-1">
+            <template #header>
+                Another panel header
+            </template>
+            <!-- Panel Content -->
+            More content here...
+            </Frame2>
+        </div>
       </div>
     </div>
+
   </section>
 </template>
 <script setup>
-  import Frame2 from "./Frame2.vue";
+    import { ref } from 'vue';
+    import Frame2 from "./Frame2.vue";
 </script>
