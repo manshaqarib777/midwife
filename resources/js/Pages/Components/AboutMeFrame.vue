@@ -1,7 +1,7 @@
 <template>
   <section
     class="w-[1320px] flex flex-row items-start justify-start pt-0 pb-[11px] pr-9 pl-5 box-border max-w-full text-center text-2xl text-plum font-poppins"
-  >
+    id="about-us">
     <div class="flex-1 flex flex-col items-center justify-center max-w-full">
       <div
         class="self-stretch flex flex-row items-center justify-start relative gap-[114px] max-w-full mq725:gap-[114px] mq450:gap-[114px] mq1050:flex-wrap"

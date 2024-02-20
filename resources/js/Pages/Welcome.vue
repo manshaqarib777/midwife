@@ -14,11 +14,13 @@
     <div
       class="w-full relative bg-world-peas-cremini-base overflow-hidden flex flex-col items-center justify-start pt-4 px-0 pb-0 box-border gap-[111px] tracking-[normal] mq725:gap-[111px] mq450:gap-[111px]"
     >
-      <HeaderFrame /><ServicesFrameTop /><AboutMeFrame /><FaqsFrame /><ServicesFrameBottom />
-      <section
+      <HeaderFrame /><ServicesFrameTop /><AboutMeFrame /><FaqsFrame />
+      <SliderFrame />
+
+      <!-- <ServicesFrameBottom /> -->
+      <!-- <section
         class="self-stretch flex flex-col items-center justify-start gap-[82px] max-w-full mq725:gap-[82px] mq450:gap-[82px]"
       >
-        <SliderFrame />
         <section
       class="self-stretch flex flex-row items-start justify-start pt-[0rem] px-[0rem] pb-[3.81rem] box-border max-w-full text-center text-[2.63rem] text-midnightblue-100 font-poppins mq725:pb-[2.5rem] mq725:box-border"
     >
@@ -62,8 +64,9 @@
         </div>
       </div>
     </section>
-        <MessageBox />
-      </section>
+      </section>-->
+      <MessageBox />
+
       <FooterFrame />
     </div>
   </template>

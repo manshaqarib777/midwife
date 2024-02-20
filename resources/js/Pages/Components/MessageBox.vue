@@ -1,6 +1,7 @@
 <template>
   <div
     class="w-[1320px] flex flex-row items-start justify-center py-0 px-5 box-border gap-[81px] max-w-full text-center text-23xl text-midnightblue-100 font-poppins mq725:gap-[81px] mq450:gap-[81px] mq1050:flex-wrap"
+    id="contact-us"
   >
     <div
       class="w-[459px] flex flex-col items-start justify-start gap-[40px] min-w-[459px] max-w-full mq725:min-w-full mq450:gap-[40px] mq1050:flex-1"

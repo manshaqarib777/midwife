@@ -11,15 +11,16 @@
         <div
           class="w-[261px] flex flex-row items-start justify-start gap-[40px] mq450:gap-[40px]"
         >
-          <div class="h-6 flex-1 relative inline-block">Services</div>
-          <div class="h-6 relative inline-block">About</div>
-          <div class="h-6 flex-1 relative inline-block">Contact</div>
+          <a class="h-6 flex-1 relative cursor-pointer inline-block" href="#services">Services</a>
+          <a class="h-6 relative cursor-pointer inline-block" href="#about-us">About</a>
+          <a class="h-6 flex-1 relative cursor-pointer inline-block" href="#contact-us">Contact</a>
         </div>
         <h3
-          class="m-0 h-9 relative text-5xl uppercase inline-block whitespace-nowrap text-plum font-inherit"
+          class="relative text-5xl uppercase inline-block whitespace-nowrap text-plum font-inherit"
         >
           <span class="font-semibold">Mid</span>
           <span class="text-midnightblue-100">wife</span>
+          <!-- <img src="/images/logo.svg" width="150" length="100" /> -->
         </h3>
       </div>
     </header>
