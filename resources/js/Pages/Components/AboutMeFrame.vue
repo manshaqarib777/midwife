@@ -78,20 +78,21 @@
             </div>
           </div>
         </div>
-        <img
+        <div class="relative">
+            <img
           class="w-[549px] relative max-h-full max-w-full mq1050:flex-1"
           loading="eager"
           alt=""
           src="/images/group-52510.svg"
         />
         <div
-          class="w-[162px] my-0 mx-[!important] absolute top-[59px] right-[8px] flex flex-col items-center justify-start p-[27px] box-border text-29xl text-palevioletred"
+          class="w-[162px] mq450:w-[112px] my-0 mx-[!important] absolute top-[59px] mq450:top-[-20px] right-[8px] flex flex-col items-center justify-start p-[27px] box-border text-29xl text-palevioletred"
         >
           <div
             class="w-full h-full absolute my-0 mx-[!important] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-[50%] bg-lavenderblush z-[1]"
           />
           <div
-            class="h-[72px] relative font-medium inline-block whitespace-nowrap z-[2] mq450:text-10xl mq1000:text-19xl"
+            class="h-[72px] mq450:h-[35px] relative font-medium inline-block whitespace-nowrap z-[2] mq450:text-10xl mq1000:text-19xl"
           >
             +10
           </div>
@@ -100,6 +101,7 @@
           >
             Years
           </h3>
+        </div>
         </div>
       </div>
     </div>
