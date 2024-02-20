@@ -6,7 +6,7 @@
   import SliderFrame from "./Components/SliderFrame.vue";
   import MessageBox from "./Components/MessageBox.vue";
   import FooterFrame from "./Components/FooterFrame.vue";
-  import SecondaryFrame from "./Components/SecondaryFrame.vue";
+  import ServicesFrameBottom from "./Components/ServicesFrameBottom.vue";
 
 </script>
 
@@ -14,7 +14,7 @@
     <div
       class="w-full relative bg-world-peas-cremini-base overflow-hidden flex flex-col items-center justify-start pt-4 px-0 pb-0 box-border gap-[111px] tracking-[normal] mq725:gap-[111px] mq450:gap-[111px]"
     >
-      <HeaderFrame /><ServicesFrameTop /><AboutMeFrame /><FaqsFrame /><SecondaryFrame />
+      <HeaderFrame /><ServicesFrameTop /><AboutMeFrame /><FaqsFrame /><ServicesFrameBottom />
       <section
         class="self-stretch flex flex-col items-center justify-start gap-[82px] max-w-full mq725:gap-[82px] mq450:gap-[82px]"
       >
