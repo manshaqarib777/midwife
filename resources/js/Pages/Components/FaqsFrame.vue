@@ -13,54 +13,54 @@
       <div
         class="w-[1280px] overflow-x-auto flex flex-col items-start justify-start gap-[24px] max-w-full text-lg"
       >
-        <!-- <Frame2 /> -->
+        <!-- <FaqFrame /> -->
         <div class="w-[1280px] flex flex-row items-start justify-start gap-[16px] text-center text-lg text-midnightblue-100 font-poppins">
-            <Frame2 class="flex-1">
+            <FaqFrame class="flex-1">
             <template #header>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </template>
             <!-- Panel Content -->
             Your content here...
-            </Frame2>
-            <Frame2 class="flex-1">
+            </FaqFrame>
+            <FaqFrame class="flex-1">
             <template #header>
                 Another panel header
             </template>
             <!-- Panel Content -->
             More content here...
-            </Frame2>
+            </FaqFrame>
         </div>
         <div class="w-[1280px] flex flex-row items-start justify-start gap-[16px] text-center text-lg text-midnightblue-100 font-poppins">
-            <Frame2 class="flex-1">
+            <FaqFrame class="flex-1">
             <template #header>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </template>
             <!-- Panel Content -->
             Your content here...
-            </Frame2>
-            <Frame2 class="flex-1">
+            </FaqFrame>
+            <FaqFrame class="flex-1">
             <template #header>
                 Another panel header
             </template>
             <!-- Panel Content -->
             More content here...
-            </Frame2>
+            </FaqFrame>
         </div>
         <div class="w-[1280px] flex flex-row items-start justify-start gap-[16px] text-center text-lg text-midnightblue-100 font-poppins">
-            <Frame2 class="flex-1">
+            <FaqFrame class="flex-1">
             <template #header>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </template>
             <!-- Panel Content -->
             Your content here...
-            </Frame2>
-            <Frame2 class="flex-1">
+            </FaqFrame>
+            <FaqFrame class="flex-1">
             <template #header>
                 Another panel header
             </template>
             <!-- Panel Content -->
             More content here...
-            </Frame2>
+            </FaqFrame>
         </div>
       </div>
     </div>
@@ -69,5 +69,5 @@
 </template>
 <script setup>
     import { ref } from 'vue';
-    import Frame2 from "./Frame2.vue";
+    import FaqFrame from "./FaqFrame.vue";
 </script>

@@ -23,25 +23,25 @@
       <div
         class="self-stretch flex flex-row flex-wrap items-start justify-start gap-[56px_12px] min-h-[452px] max-w-full text-5xl"
       >
-        <Frame3 frame17="/images/frame-17.svg" prenatalCare="Prenatal care" /><Frame3
+        <ServiceFrame frame17="/images/frame-17.svg" prenatalCare="Prenatal care" /><ServiceFrame
           frame17="/images/frame-17-1.svg"
           prenatalCare="Childbirth education"
-        /><Frame3
+        /><ServiceFrame
           frame17="/images/frame-17-2.svg"
           prenatalCare="Labor support"
-        /><Frame3
+        /><ServiceFrame
           frame17="/images/frame-17-3.svg"
           prenatalCare="Postpartum care"
-        /><Frame3
+        /><ServiceFrame
           frame17="/images/frame-17-4.svg"
           prenatalCare="Breastfeeding support"
-        /><Frame3 frame17="/images/frame-17-5.svg" prenatalCare="Newborn care" />
+        /><ServiceFrame frame17="/images/frame-17-5.svg" prenatalCare="Newborn care" />
       </div>
     </div>
   </section>
 </template>
 <script setup>
-  import Frame3 from "./Frame3.vue";
+  import ServiceFrame from "./ServiceFrame.vue";
 
 
 </script>

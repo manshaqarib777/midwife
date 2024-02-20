@@ -1,11 +1,11 @@
 <script setup>
-  import TextNode from "./Components/TextNode.vue";
-  import TextList from "./Components/TextList.vue";
-  import FrameComponent2 from "./Components/FrameComponent2.vue";
-  import FrameComponent1 from "./Components/FrameComponent1.vue";
-  import Frame1 from "./Components/Frame1.vue";
-  import Frame from "./Components/Frame.vue";
-  import FrameComponent from "./Components/FrameComponent.vue";
+  import HeaderFrame from "./Components/HeaderFrame.vue";
+  import ServicesFrameTop from "./Components/ServicesFrameTop.vue";
+  import AboutMeFrame from "./Components/AboutMeFrame.vue";
+  import FaqsFrame from "./Components/FaqsFrame.vue";
+  import SliderFrame from "./Components/SliderFrame.vue";
+  import MessageBox from "./Components/MessageBox.vue";
+  import FooterFrame from "./Components/FooterFrame.vue";
   import SecondaryFrame from "./Components/SecondaryFrame.vue";
 
 </script>
@@ -14,11 +14,11 @@
     <div
       class="w-full relative bg-world-peas-cremini-base overflow-hidden flex flex-col items-center justify-start pt-4 px-0 pb-0 box-border gap-[111px] tracking-[normal] mq725:gap-[111px] mq450:gap-[111px]"
     >
-      <TextNode /><TextList /><FrameComponent2 /><FrameComponent1 /><SecondaryFrame />
+      <HeaderFrame /><ServicesFrameTop /><AboutMeFrame /><FaqsFrame /><SecondaryFrame />
       <section
         class="self-stretch flex flex-col items-center justify-start gap-[82px] max-w-full mq725:gap-[82px] mq450:gap-[82px]"
       >
-        <Frame1 />
+        <SliderFrame />
         <section
       class="self-stretch flex flex-row items-start justify-start pt-[0rem] px-[0rem] pb-[3.81rem] box-border max-w-full text-center text-[2.63rem] text-midnightblue-100 font-poppins mq725:pb-[2.5rem] mq725:box-border"
     >
@@ -62,8 +62,8 @@
         </div>
       </div>
     </section>
-        <frame />
+        <MessageBox />
       </section>
-      <FrameComponent />
+      <FooterFrame />
     </div>
   </template>
