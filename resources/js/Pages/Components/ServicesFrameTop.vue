@@ -25,11 +25,12 @@
           <button
             class="cursor-pointer [border:none] py-2 px-[22px] bg-plum h-12 rounded-6xs flex flex-row items-center justify-center box-border gap-[4px] whitespace-nowrap hover:bg-darkslateblue"
           >
-            <div
-              class="relative text-base leading-[160%] font-poppins text-world-peas-cremini-base text-center"
+            <a
+                href="#contact-us"
+                class="relative text-base leading-[160%] font-poppins text-world-peas-cremini-base text-center"
             >
               Get a Quote
-            </div>
+            </a>
             <img
               class="h-6 w-6 relative"
               alt=""
@@ -39,7 +40,7 @@
           <div
             class="rounded-12xl flex flex-row items-center justify-center gap-[4px]"
           >
-            <div class="relative leading-[160%]">View Services</div>
+            <a href="#services" class="relative leading-[160%]">View Services</a>
             <img
               class="h-6 w-6 relative"
               alt=""
