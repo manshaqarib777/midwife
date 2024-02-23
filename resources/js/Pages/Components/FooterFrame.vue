@@ -11,15 +11,17 @@
         <h3
           class="m-0 h-9 relative text-inherit uppercase text-world-peas-compost-base inline-block font-inherit mq450:text-lgi"
         >
-          <span class="font-semibold">Mid</span>
-          <span>wife</span>
+          <!-- <span class="font-semibold">Mid</span>
+          <span>wife</span> -->
+          <img src="/images/logo.png" width="100" length="100" />
+
         </h3>
         <div
           class="w-[261px] flex flex-row items-start justify-between gap-[20px] text-base"
         >
-          <div class="h-6 flex-1 relative inline-block">Services</div>
-          <div class="h-6 relative inline-block">About</div>
-          <div class="h-6 flex-1 relative inline-block">Contact</div>
+          <a class="h-6 flex-1 relative inline-block" href="#services">Services</a>
+          <a class="h-6 relative inline-block" href="#about-us">About</a>
+          <a class="h-6 flex-1 relative inline-block" href="#contact-us">Contact</a>
         </div>
         <div
           class="flex flex-row items-center justify-center gap-[24px] max-w-full text-center text-lg mq725:flex-wrap"

@@ -20,7 +20,7 @@
         >
           <!-- <span class="font-semibold">Mid</span>
           <span class="text-midnightblue-100">wife</span> -->
-          <img src="/images/logo.png" width="80" length="100" />
+          <img src="/images/logo.png" width="100" length="100" />
         </h3>
       </div>
     </header>
