@@ -16,10 +16,9 @@
     <div
       class="w-full relative bg-world-peas-cremini-base overflow-hidden flex flex-col items-center justify-start pt-4 px-0 pb-0 box-border gap-[111px] tracking-[normal] mq725:gap-[111px] mq450:gap-[111px]"
     >
-      <HeaderFrame />
-            <AboutMeFrame />
-<ServicesFrameTop />
-      <section
+        <HeaderFrame />
+        <AboutMeFrame />
+        <section
             class="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-[7px] box-border gap-[16px] max-w-full text-center text-37xl text-midnightblue-100 font-poppins"
         >
         <div
@@ -49,8 +48,9 @@
                 />
             </div>
             </div>
-            </section>
-      <SliderFrame />
+        </section>
+        <ServicesFrameTop />
+        <SliderFrame />
 
       <!-- <ServicesFrameBottom /> -->
       <!-- <section
