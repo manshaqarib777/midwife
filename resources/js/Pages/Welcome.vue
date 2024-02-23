@@ -1,20 +1,22 @@
 <script setup>
-  import HeaderFrame from "./Components/HeaderFrame.vue";
-  import ServicesFrameTop from "./Components/ServicesFrameTop.vue";
-  import AboutMeFrame from "./Components/AboutMeFrame.vue";
-  import FaqsFrame from "./Components/FaqsFrame.vue";
-  import SliderFrame from "./Components/SliderFrame.vue";
-  import MessageBox from "./Components/MessageBox.vue";
-  import FooterFrame from "./Components/FooterFrame.vue";
-  import ServicesFrameBottom from "./Components/ServicesFrameBottom.vue";
-
+    import HeaderFrame from "./Components/HeaderFrame.vue";
+    import ServicesFrameTop from "./Components/ServicesFrameTop.vue";
+    import AboutMeFrame from "./Components/AboutMeFrame.vue";
+    import FaqsFrame from "./Components/FaqsFrame.vue";
+    import SliderFrame from "./Components/SliderFrame.vue";
+    import MessageBox from "./Components/MessageBox.vue";
+    import FooterFrame from "./Components/FooterFrame.vue";
+    import ServicesFrameBottom from "./Components/ServicesFrameBottom.vue";
+    defineProps({
+        RECAPTCHAV3_SITEKEY: String,
+    });
 </script>
 
 <template>
     <div
       class="w-full relative bg-world-peas-cremini-base overflow-hidden flex flex-col items-center justify-start pt-4 px-0 pb-0 box-border gap-[111px] tracking-[normal] mq725:gap-[111px] mq450:gap-[111px]"
     >
-      <HeaderFrame /><ServicesFrameTop /><AboutMeFrame /><FaqsFrame />
+      <HeaderFrame /><ServicesFrameTop /><AboutMeFrame />
       <SliderFrame />
 
       <!-- <ServicesFrameBottom /> -->
@@ -65,7 +67,7 @@
       </div>
     </section>
       </section>-->
-      <MessageBox />
+      <MessageBox :RECAPTCHAV3_SITEKEY="RECAPTCHAV3_SITEKEY" />
 
       <FooterFrame />
     </div>

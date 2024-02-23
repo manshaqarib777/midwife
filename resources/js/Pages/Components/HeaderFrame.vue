@@ -18,9 +18,9 @@
         <h3
           class="relative text-5xl uppercase inline-block whitespace-nowrap text-plum font-inherit"
         >
-          <span class="font-semibold">Mid</span>
-          <span class="text-midnightblue-100">wife</span>
-          <!-- <img src="/images/logo.svg" width="150" length="100" /> -->
+          <!-- <span class="font-semibold">Mid</span>
+          <span class="text-midnightblue-100">wife</span> -->
+          <img src="/images/logo.png" width="80" length="100" />
         </h3>
       </div>
     </header>
@@ -39,34 +39,6 @@
             >Compassionate Midwifery Care</span
           >
         </h1>
-        <div
-          class="flex flex-row items-center justify-center gap-[24px] max-w-full text-base mq450:flex-wrap"
-        >
-          <button
-            class="cursor-pointer [border:none] py-2 px-[22px] bg-plum h-12 rounded-6xs flex flex-row items-center justify-center box-border gap-[4px] whitespace-nowrap hover:bg-darkslateblue"
-          >
-            <div
-              class="relative text-base leading-[160%] font-poppins text-world-peas-cremini-base text-center"
-            >
-              Get a Quote
-            </div>
-            <img
-              class="h-6 w-6 relative"
-              alt=""
-              src="/images/arrows-diagramsarrow.svg"
-            />
-          </button>
-          <div
-            class="rounded-12xl flex flex-row items-center justify-center gap-[4px]"
-          >
-            <div class="relative leading-[160%]">View Services</div>
-            <img
-              class="h-6 w-6 relative"
-              alt=""
-              src="/images/arrows-diagramsarrow-1.svg"
-            />
-          </div>
-        </div>
       </div>
       <div
         class="w-[989.6px] h-[591.7px] relative z-[1] flex items-center justify-center"

@@ -109,28 +109,33 @@
         <div
           class="self-stretch flex flex-col items-start justify-start gap-[22px]"
         >
+        <form @submit.prevent="submitForm">
           <div
             class="self-stretch flex flex-col items-start justify-start gap-[15px]"
           >
             <input
-              class="w-full [border:none] [outline:none] bg-gray self-stretch h-[73px] rounded-2xl flex flex-col items-start justify-start py-6 px-4 box-border font-poppins text-lg text-world-peas-compost-base min-w-[250px]"
-              placeholder="Name"
-              type="text"
+                v-model="form.name"
+                class="w-full [border:none] [outline:none] bg-gray self-stretch h-[73px] rounded-2xl flex flex-col items-start justify-start py-6 px-4 box-border font-poppins text-lg text-world-peas-compost-base min-w-[250px]"
+                placeholder="Name"
+                type="text"
             />
             <input
-              class="w-full [border:none] [outline:none] bg-gray self-stretch h-[73px] rounded-2xl flex flex-col items-start justify-start py-6 px-4 box-border font-poppins text-lg text-world-peas-compost-base min-w-[250px]"
-              placeholder="Email"
-              type="text"
+                v-model="form.email"
+                class="w-full [border:none] [outline:none] bg-gray self-stretch h-[73px] rounded-2xl flex flex-col items-start justify-start py-6 px-4 box-border font-poppins text-lg text-world-peas-compost-base min-w-[250px]"
+                placeholder="Email"
+                type="text"
             />
             <textarea
-              class="[border:none] bg-gray h-[183px] w-auto [outline:none] self-stretch rounded-2xl flex flex-col items-start justify-start py-6 px-4 box-border font-poppins text-lg text-world-peas-compost-base"
-              placeholder="Message"
-              rows="9"
-              cols="37"
+                v-model="form.message"
+                class="[border:none] bg-gray h-[183px] w-auto [outline:none] self-stretch rounded-2xl flex flex-col items-start justify-start py-6 px-4 box-border font-poppins text-lg text-world-peas-compost-base"
+                placeholder="Message"
+                rows="9"
+                cols="37"
             />
           </div>
           <button
-            class="cursor-pointer [border:none] py-2 px-6 bg-plum h-12 rounded-6xs flex flex-row items-center justify-center box-border gap-[4px] hover:bg-darkslateblue"
+            type="submit"
+            class="cursor-pointer [border:none] mt-2 py-2 px-6 bg-plum h-12 rounded-6xs flex flex-row items-center justify-center box-border gap-[4px] hover:bg-darkslateblue"
           >
             <div
               class="relative text-base leading-[160%] font-poppins text-world-peas-cremini-base text-center"
@@ -143,11 +148,60 @@
               src="/images/arrows-diagramsarrow.svg"
             />
           </button>
+        </form>
+
         </div>
       </div>
     </div>
   </div>
 </template>
 <script setup>
+import { ref } from 'vue';
+import axios from 'axios';
+import { toast } from 'vue3-toastify';
+import 'vue3-toastify/dist/index.css';
+
+const props = defineProps({
+    RECAPTCHAV3_SITEKEY: String,
+});
+// Import your reCAPTCHA component compatible with Vue 3, adjust import based on actual usage
+// This example does not directly import a reCAPTCHA component due to the generic nature of the approach
+
+// Reactive form state
+const form = ref({
+  name: '',
+  email: '',
+  message: '',
+  'g-recaptcha-response': ''
+});
+
+const showToast = ref(false);
+const toastMessage = ref('');
+
+
+const submitForm = () => {
+    grecaptcha.ready(() => {
+        grecaptcha.execute(props.RECAPTCHAV3_SITEKEY, { action: 'submit' }).then(async (token) => {
+            form.value['g-recaptcha-response'] = token;
+
+            try {
+                // Simulate form submission
+                const response = await axios.put('/contact', form.value);
+                toast("Your message has been sent successfully!", {
+                    autoClose: 1000,
+                }); // ToastOptions
+
+                // Reset form
+                form.value = { name: '', email: '', message: '' };
+            } catch (error) {
+                toast("Failed to send your message. Please try again.", {
+                    autoClose: 5000,
+                }); // ToastOptions
+            }
+        });
+    });
+};
+
+
 
 </script>

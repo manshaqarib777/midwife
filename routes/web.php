@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Application;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,8 +22,10 @@ Route::get('/', function () {
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
+        'RECAPTCHAV3_SITEKEY' => env('RECAPTCHAV3_SITEKEY'),
     ]);
 });
+Route::put('/contact', [ContactController::class, 'store']);
 
 Route::middleware([
     'auth:sanctum',
