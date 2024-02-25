@@ -125,6 +125,18 @@
                 placeholder="Email"
                 type="text"
             />
+            <input
+                v-model="form.date"
+                class="w-full [border:none] [outline:none] bg-gray self-stretch h-[73px] rounded-2xl items-start justify-start py-6 px-4 box-border font-poppins text-lg text-world-peas-compost-base min-w-[250px]"
+                placeholder="Date"
+                type="date"
+            />
+            <input
+                v-model="form.address"
+                class="w-full [border:none] [outline:none] bg-gray self-stretch h-[73px] rounded-2xl flex flex-col items-start justify-start py-6 px-4 box-border font-poppins text-lg text-world-peas-compost-base min-w-[250px]"
+                placeholder="Address"
+                type="text"
+            />
             <textarea
                 v-model="form.message"
                 class="[border:none] bg-gray h-[183px] w-auto [outline:none] self-stretch rounded-2xl flex flex-col items-start justify-start py-6 px-4 box-border font-poppins text-lg text-world-peas-compost-base"
@@ -171,6 +183,8 @@ const props = defineProps({
 const form = ref({
   name: '',
   email: '',
+  date: '',
+  address: '',
   message: '',
   'g-recaptcha-response': ''
 });
@@ -192,7 +206,7 @@ const submitForm = () => {
                 }); // ToastOptions
 
                 // Reset form
-                form.value = { name: '', email: '', message: '' };
+                form.value = { name: '', email: '', date: '',address: '', message: '' };
             } catch (error) {
                 toast("Failed to send your message. Please try again.", {
                     autoClose: 5000,

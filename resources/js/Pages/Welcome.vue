@@ -18,6 +18,7 @@
     >
         <HeaderFrame />
         <AboutMeFrame />
+        <ServicesFrameTop />
         <section
             class="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-[7px] box-border gap-[16px] max-w-full text-center text-37xl text-midnightblue-100 font-poppins"
         >
@@ -49,7 +50,6 @@
             </div>
             </div>
         </section>
-        <ServicesFrameTop />
         <SliderFrame />
 
       <!-- <ServicesFrameBottom /> -->
